@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:cl="http://schemas.android.com/apk/res/com.example.startup.startuptaskmanager"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/fon_grey_1"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.startup.startuptaskmanager.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+   <!-- <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:id="@+id/textView2" />-->
+
+    <com.example.startup.startuptaskmanager.CellLayout
+        android:id="@+id/cell_layout"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+
+        cl:columns="6"
+        cl:spacing="6dp"
+        >
+      <!--  <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            cl:layout_cellsHeight="1"
+            cl:layout_cellsWidth="1"
+            cl:layout_left="0"
+            cl:layout_top="0"
+            android:background="#00FF00"
+            android:text="View 1" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            cl:layout_cellsHeight="1"
+            cl:layout_cellsWidth="1"
+            cl:layout_left="1"
+            cl:layout_top="0"
+            android:background="#00FF00"
+            android:text="View 1" />-->
+
+        <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        cl:layout_cellsHeight="4"
+        cl:layout_cellsWidth="3"
+        cl:layout_left="0"
+        cl:layout_top="0">
+            <include layout="@layout/custom_layout_user"
+                  />
+
+
+            </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            cl:layout_cellsHeight="4"
+            cl:layout_cellsWidth="3"
+            cl:layout_left="3"
+            cl:layout_top="0">
+
+            </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            cl:layout_cellsHeight="4"
+            cl:layout_cellsWidth="3"
+            cl:layout_left="0"
+            cl:layout_top="4">
+            <include layout="@layout/layout_for_notification">
+
+            </include>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            cl:layout_cellsHeight="4"
+            cl:layout_cellsWidth="3"
+            cl:layout_left="3"
+            cl:layout_top="4">
+            <include layout="@layout/layout_for_infday"></include>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            cl:layout_cellsHeight="4"
+            cl:layout_cellsWidth="6"
+            cl:layout_left="0"
+            cl:layout_top="8">
+<include layout="@layout/layout_for_tabhost">
+
+</include>
+        </RelativeLayout>
+
+    </com.example.startup.startuptaskmanager.CellLayout>
+
+
+
+</ScrollView>
