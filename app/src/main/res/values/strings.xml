@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">StartUpTaskManager</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+//user tab
+    <string name="user_name">Alex Chromov</string>
+    <string name="user_prof">Developer</string>
+    <string name="city">Astana</string>
+//notification tab
+    <string name="notif_up_line">Last notification</string>
+    <string name="notif_down_line">See all notification</string>
+
+
+</resources>
